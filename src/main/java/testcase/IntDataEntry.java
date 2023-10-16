@@ -10,6 +10,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @EqualsAndHashCode
 public class IntDataEntry implements AbstractDataEntry {
-  private Discriminator discriminator;
+  private Discriminator discriminator = Discriminator.INT;
   private int intValue;
 }

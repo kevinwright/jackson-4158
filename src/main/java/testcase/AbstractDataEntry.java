@@ -13,6 +13,6 @@ import com.fasterxml.jackson.databind.annotation.JsonTypeIdResolver;
 )
 @JsonTypeIdResolver(DiscriminatorResolver.class)
 public interface AbstractDataEntry {
-  Discriminator discriminator = null;
+  Discriminator getDiscriminator();
 }
 
